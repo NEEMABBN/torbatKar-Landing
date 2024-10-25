@@ -1,15 +1,13 @@
 import React from "react";
+import Profile from "../assets/Images/Profile.png";
+import stars from "../assets/Images/Stars.svg";
 
 export default function EachCommentBox() {
   return (
     <div className="w-full flex flex-col items-center bg-white rounded-2xl gap-5 py-6 sm:px-8 px-4">
       <div className="w-full flex items-start justify-between">
         <div className="flex items-start sm:gap-3 gap-2">
-          <img
-            src="/src/assets/Images/Profile.png"
-            alt=""
-            className="w-[60px] h-[60px]"
-          />
+          <img src={Profile} alt="" className="w-[60px] h-[60px]" />
           <div className="flex flex-col items-start gap-1">
             <span className="text-black sm:text-base text-sm">
               احمدرضا حسینی
@@ -20,7 +18,7 @@ export default function EachCommentBox() {
           </div>
         </div>
         <div className="">
-          <img src="/src/assets/Images/Stars.svg" alt="" className="" />
+          <img src={stars} alt="" className="" />
         </div>
       </div>
       <p className="text-sm text-gray-500">
