@@ -4,6 +4,7 @@ import { FiLogIn } from "react-icons/fi";
 import SideMenu from "./SideMenu";
 import { FaXmark } from "react-icons/fa6";
 import { TiThMenuOutline } from "react-icons/ti";
+import logo from "../assets/Images/Logo.webp";
 
 export default function NavbarLayouts() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,11 +25,7 @@ export default function NavbarLayouts() {
         </button>
       </div>
       <div className="flex items-center sm:gap-7 gap-3">
-        <img
-          src="/src/assets/Images/Logo.webp"
-          alt=""
-          className="lg:w-[150px] sm:w-[120px] w-[90px]"
-        />
+        <img src={logo} alt="" className="lg:w-[150px] sm:w-[120px] w-[90px]" />
         <NavbarItems />
         <button
           onClick={handleMenu}

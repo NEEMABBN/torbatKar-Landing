@@ -4,16 +4,15 @@ import { FaTwitter } from "react-icons/fa6";
 import { FiLinkedin } from "react-icons/fi";
 import { RiFacebookFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import logo from "../assets/Images/Logo.webp";
+import Vertical1 from "../assets/Images/Vertical container.png";
+import Vertical2 from "../assets/Images/Vertical container2.png";
 
 export default function Footer() {
   return (
     <div className="container mx-auto flex flex-col items-center gap-10 mt-28 mb-5">
       <div className="w-full flex sm:justify-start justify-center">
-        <img
-          src="/src/assets/Images/Logo.webp"
-          alt=""
-          className="sm:w-[130px] w-[110px]"
-        />
+        <img src={logo} alt="" className="sm:w-[130px] w-[110px]" />
       </div>
       <div className="w-full flex lg:flex-row flex-col-reverse lg:gap-0 gap-10 items-center justify-between">
         <div className="lg:w-auto w-full flex flex-col lg:items-start items-center gap-4 sm:px-0 px-5">
@@ -157,16 +156,8 @@ export default function Footer() {
             </li>
           </ul>
           <div className="flex flex-col items-center gap-5">
-            <img
-              src="/src/assets/Images/Vertical container.png"
-              alt=""
-              className=""
-            />
-            <img
-              src="/src/assets/Images/Vertical container2.png"
-              alt=""
-              className=""
-            />
+            <img src={Vertical1} alt="" className="" />
+            <img src={Vertical2} alt="" className="" />
           </div>
         </div>
       </div>
