@@ -28,7 +28,7 @@ export default function Companies() {
             slidesPerView: 4,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 6,
           },
         }}
         modules={[Pagination]}
@@ -36,43 +36,71 @@ export default function Companies() {
       >
         <SwiperSlide>
           <div className="flex flex-col items-center gap-4">
-            <img src={CompanyProfile1} alt="" className="" />
+            <img
+              src={CompanyProfile1}
+              alt=""
+              className="rounded-full w-[100px] h-[100px]"
+            />
             <span className="text-black font-bold">شال و روسری مهراد</span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center gap-4">
-            <img src={CompanyProfile2} alt="" className="" />
+            <img
+              src={CompanyProfile2}
+              alt=""
+              className="rounded-full w-[100px] h-[100px]"
+            />
             <span className="text-black font-bold">برگ بنفش</span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center gap-4">
-            <img src={CompanyProfile3} alt="" className="" />
+            <img
+              src={CompanyProfile3}
+              alt=""
+              className="rounded-full w-[100px] h-[100px]"
+            />
             <span className="text-black font-bold">عروس کالا</span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center gap-4">
-            <img src={CompanyProfile4} alt="" className="" />
+            <img
+              src={CompanyProfile4}
+              alt=""
+              className="rounded-full w-[100px] h-[100px]"
+            />
             <span className="text-black font-bold">مانی مد</span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center gap-4">
-            <img src={CompanyProfile5} alt="" className="" />
+            <img
+              src={CompanyProfile5}
+              alt=""
+              className="rounded-full w-[100px] h-[100px]"
+            />
             <span className="text-black font-bold">سالن زیبایی نورا</span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center gap-4">
-            <img src={CompanyProfile6} alt="" className="" />
+            <img
+              src={CompanyProfile6}
+              alt=""
+              className="rounded-full w-[100px] h-[100px]"
+            />
             <span className="text-black font-bold">نمایشگاه چوب کاج</span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center gap-4">
-            <img src={CompanyProfile7} alt="" className="" />
+            <img
+              src={CompanyProfile7}
+              alt=""
+              className="rounded-full w-[100px] h-[100px]"
+            />
             <span className="text-black font-bold">بیمه پاسارگاد</span>
           </div>
         </SwiperSlide>

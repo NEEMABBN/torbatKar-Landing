@@ -14,7 +14,7 @@ export default function NavbarLayouts() {
   };
 
   return (
-    <div className="container mx-auto flex flex-row-reverse items-center justify-between rounded-b-xl z-10 fixed bg-[#FFFFFF3B] backdrop-blur-[8.3px] shadow px-3 py-2">
+    <div className="container mx-auto flex flex-row-reverse items-center justify-between rounded-b-xl z-10 fixed bg-[#FFFFFF3B] backdrop-blur-[8.3px] shadow px-3 py-5">
       <div className="flex flex-row-reverse items-center sm:gap-7 gap-3">
         <button className="bg-Primary text-white sm:px-4 px-2 py-1 rounded-xl sm:text-base text-sm">
           ثبت آگهی رایگان!

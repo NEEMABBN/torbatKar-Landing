@@ -13,12 +13,24 @@ export default function NavbarItems() {
             }`
           }
         >
+          صفحه‌ی اصلی
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="https://torbatkar.ir/jobs/"
+          className={({ isActive }) =>
+            `text-nowrap font-bold ${
+              isActive ? "text-black" : "text-[#757575]"
+            }`
+          }
+        >
           فرصت‌های شغلی
         </NavLink>
       </li>
       <li>
         <NavLink
-          to="/somePage"
+          to="https://torbatkar.ir/about"
           className={({ isActive }) =>
             `text-nowrap font-bold ${
               isActive ? "text-black" : "text-[#757575]"
@@ -30,7 +42,7 @@ export default function NavbarItems() {
       </li>
       <li>
         <NavLink
-          to="/somePage"
+          to="https://torbatkar.ir/contact/"
           className={({ isActive }) =>
             `text-nowrap font-bold ${
               isActive ? "text-black" : "text-[#757575]"
@@ -42,7 +54,7 @@ export default function NavbarItems() {
       </li>
       <li>
         <NavLink
-          to="/somePage"
+          to="https://torbatkar.ir/employers-list/"
           className={({ isActive }) =>
             `text-nowrap font-bold ${
               isActive ? "text-black" : "text-[#757575]"

@@ -17,12 +17,24 @@ export default function SideMenu({ isMenuOpen }) {
             }`
           }
         >
+          صفحه‌ی اصلی
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="https://torbatkar.ir/jobs/"
+          className={({ isActive }) =>
+            `text-nowrap font-bold ${
+              isActive ? "text-black" : "text-[#757575]"
+            }`
+          }
+        >
           فرصت‌های شغلی
         </NavLink>
       </li>
       <li>
         <NavLink
-          to="/somePage"
+          to="https://torbatkar.ir/about"
           className={({ isActive }) =>
             `text-nowrap font-bold ${
               isActive ? "text-black" : "text-[#757575]"
@@ -34,7 +46,7 @@ export default function SideMenu({ isMenuOpen }) {
       </li>
       <li>
         <NavLink
-          to="/somePage"
+          to="https://torbatkar.ir/contact/"
           className={({ isActive }) =>
             `text-nowrap font-bold ${
               isActive ? "text-black" : "text-[#757575]"
@@ -46,7 +58,7 @@ export default function SideMenu({ isMenuOpen }) {
       </li>
       <li>
         <NavLink
-          to="/somePage"
+          to="https://torbatkar.ir/employers-list/"
           className={({ isActive }) =>
             `text-nowrap font-bold ${
               isActive ? "text-black" : "text-[#757575]"
