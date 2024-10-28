@@ -34,19 +34,19 @@ export default function JobOpportunities() {
         <img src={AnalysIcon} alt="" className="" />
       </div>
 
-      <div className="w-full flex flex-col md:items-start items-center py-10 gap-16">
+      <div className="w-full flex flex-col md:items-start items-center py-10 sm:gap-16 gap-8">
         {JobsData.map((item, index) => (
           <div
             key={item.id}
             onClick={() => toggleAccordion(index)}
-            className={`cursor-pointer w-full flex flex-col items-center rounded-2xl p-6 gap-4 overflow-hidden duration-500 transition-all ${
-              openIndex === index ? "bg-blue-50 h-[210px]" : "bg-white h-[90px]"
+            className={`cursor-pointer w-full flex flex-col items-center rounded-2xl justify-between p-6 gap-2 overflow-hidden duration-500 transition-all ${
+              openIndex === index ? "bg-blue-50 h-[100%]" : "bg-white h-[25%]"
             }`}
           >
             <div className="w-full flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <img src={item.image} alt="" className="" />
-                <h3 className="text-black text-2xl font-extrabold">
+                <h3 className="text-black sm:text-2xl text-xl font-extrabold">
                   {item.title}
                 </h3>
               </div>
@@ -59,7 +59,7 @@ export default function JobOpportunities() {
               </button>
             </div>
             {openIndex === index && (
-              <div className="w-[80%] mx-auto flex flex-col items-start gap-4">
+              <div className="w-[80%] mx-auto flex flex-col items-start justify-between h-full">
                 <p className="text-[#344456] text-sm leading-6">
                   {item.description}
                 </p>
