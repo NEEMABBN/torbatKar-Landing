@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function CategorySectionItem({ title, icon, description, btn }) {
   return (
@@ -10,9 +11,12 @@ export default function CategorySectionItem({ title, icon, description, btn }) {
       <p className="text-center leading-7 sm:text-base text-sm">
         {description}
       </p>
-      <button className="text-white group-hover:bg-Primary transition-all sm:text-base text-sm bg-gray-500 px-5 py-1 rounded-xl">
+      <Link
+        to="https://torbatkar.ir/signup"
+        className="text-white group-hover:bg-Primary transition-all sm:text-base text-sm bg-gray-500 px-5 py-1 rounded-xl"
+      >
         {btn}
-      </button>
+      </Link>
     </div>
   );
 }

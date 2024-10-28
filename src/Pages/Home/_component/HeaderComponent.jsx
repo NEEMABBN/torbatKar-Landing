@@ -19,7 +19,7 @@ export default function HeaderComponent() {
       <div className="lg:w-1/2 w-full flex items-start gap-7">
         <div className="lg:block hidden w-[5px] bg-gradient-to-b from-Primary to-Base h-[200px] rounded-full"></div>
         <div className="w-full flex flex-col lg:items-start items-center gap-7">
-          <h2 className="md:text-4xl sm:text-2xl text-xl text-[#344456] font-extrabold">
+          <h2 className="md:text-4xl text-2xl text-[#344456] font-extrabold">
             در جستجوی <span className="text-Primary">شغلی مناسب</span>
           </h2>
           <p className="text-gray-500 lg:text-start text-center sm:text-base text-sm">

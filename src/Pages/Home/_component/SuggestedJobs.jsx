@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { JobsPost } from "./JobsPost";
 import { FaChevronLeft } from "react-icons/fa";
 import LazyLoadTemplate from "../../../Components/LazyLoadTemplate";
+import { Link } from "react-router-dom";
 
 export default function SuggestedJobs() {
   const [data, setData] = useState([]);
@@ -57,6 +58,7 @@ export default function SuggestedJobs() {
                 key={item.ID}
                 title={item.post_title}
                 time={item.job_type_name}
+                showDetail={item.job_link}
                 price={
                   item.job_salary == 0 || item.job_salary == null ? (
                     <>
@@ -81,10 +83,13 @@ export default function SuggestedJobs() {
           )}
         </div>
         <div className="w-full flex justify-end">
-          <button className="flex items-center gap-1 text-black font-bold sm:text-base text-sm">
+          <Link
+            to="https://torbatkar.ir/jobs/"
+            className="flex items-center gap-1 text-black hover:text-Primary transition-all font-bold sm:text-base text-sm"
+          >
             مشاهده همه
             <FaChevronLeft className="sm:text-lg" />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

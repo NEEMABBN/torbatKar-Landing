@@ -8,7 +8,7 @@ export default function NavbarItems() {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-1 ${
+            `text-nowrap font-bold text-black py-[23px] ${
               isActive
                 ? "border-solid border-b-2 border-Primary"
                 : "border-none"
@@ -22,7 +22,7 @@ export default function NavbarItems() {
         <NavLink
           to="https://torbatkar.ir/jobs/"
           className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-1 ${
+            `text-nowrap font-bold text-black py-[23px] ${
               isActive
                 ? "border-solid border-b-2 border-Primary"
                 : "border-none"
@@ -34,9 +34,23 @@ export default function NavbarItems() {
       </li>
       <li>
         <NavLink
+          to="https://torbatkar.ir/employers-list/"
+          className={({ isActive }) =>
+            `text-nowrap font-bold text-black py-[23px] ${
+              isActive
+                ? "border-solid border-b-2 border-Primary"
+                : "border-none"
+            }`
+          }
+        >
+          کارفرمایان
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to="https://torbatkar.ir/about"
           className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-1 ${
+            `text-nowrap font-bold text-black py-[23px] ${
               isActive
                 ? "border-solid border-b-2 border-Primary"
                 : "border-none"
@@ -50,7 +64,7 @@ export default function NavbarItems() {
         <NavLink
           to="https://torbatkar.ir/contact/"
           className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-1 ${
+            `text-nowrap font-bold text-black py-[23px] ${
               isActive
                 ? "border-solid border-b-2 border-Primary"
                 : "border-none"
@@ -58,20 +72,6 @@ export default function NavbarItems() {
           }
         >
           تماس‌باما
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="https://torbatkar.ir/employers-list/"
-          className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-1 ${
-              isActive
-                ? "border-solid border-b-2 border-Primary"
-                : "border-none"
-            }`
-          }
-        >
-          کارفرمایان
         </NavLink>
       </li>
     </ul>

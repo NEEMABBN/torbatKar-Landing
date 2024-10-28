@@ -3,7 +3,14 @@ import { BsCashCoin } from "react-icons/bs";
 import { FaRegBookmark } from "react-icons/fa";
 import { GrLocation } from "react-icons/gr";
 
-export function JobsPost({ title, category, price, time, location }) {
+export function JobsPost({
+  title,
+  category,
+  price,
+  time,
+  location,
+  showDetail,
+}) {
   return (
     <div className="w-full flex items-center justify-between rounded-2xl sm:p-5 p-3 border-solid border-2 border-[#EFEFEF] hover:border-Primary bg-white hover:bg-Base transition-all">
       <div className="sm:w-auto w-full flex flex-col items-start sm:gap-7 gap-4">
@@ -28,12 +35,15 @@ export function JobsPost({ title, category, price, time, location }) {
           <button className="sm:text-xl text-lg">
             <FaRegBookmark className="text-xl" />
           </button>
-          <button className="text-white bg-Primary px-2 py-1 rounded-lg text-sm text-nowrap">
+          <button
+            onClick={() => (window.location.href = showDetail)}
+            className="text-white bg-Primary px-2 py-1 rounded-lg text-sm text-nowrap"
+          >
             مشاهده جزئیات
           </button>
         </div>
       </div>
-      <div className="sm:flex hidden flex-col sm:items-center items-end h-full justify-between">
+      <div className="sm:flex hidden flex-col items-end h-full justify-between">
         <div className="flex sm:flex-row flex-col-reverse sm:items-center items-end sm:gap-8 gap-4">
           <div className="sm:flex hidden items-center gap-1">
             <GrLocation className="md:text-xl sm:text-lg text-base" />
@@ -43,7 +53,10 @@ export function JobsPost({ title, category, price, time, location }) {
             <FaRegBookmark />
           </button>
         </div>
-        <button className=" text-white bg-Primary px-2 py-1 rounded-lg text-sm text-nowrap">
+        <button
+          onClick={() => (window.location.href = showDetail)}
+          className=" text-white bg-Primary px-2 py-1 rounded-lg text-sm text-nowrap"
+        >
           مشاهده جزئیات
         </button>
       </div>
