@@ -10,7 +10,7 @@ import Vertical2 from "../assets/Images/Vertical container2.png";
 
 export default function Footer() {
   return (
-    <div className="container mx-auto flex flex-col items-center gap-10 mt-28 mb-5">
+    <div className="container mx-auto flex flex-col items-center gap-10 mt-16 mb-5">
       <div className="w-full flex sm:justify-start justify-center">
         <img src={logo} alt="" className="sm:w-[130px] w-[110px]" />
       </div>

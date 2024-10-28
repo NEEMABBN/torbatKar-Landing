@@ -12,8 +12,10 @@ export default function SideMenu({ isMenuOpen }) {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `text-nowrap font-bold ${
-              isActive ? "text-black" : "text-[#757575]"
+            `text-nowrap font-bold text-black py-1 ${
+              isActive
+                ? "border-solid border-b-2 border-Primary"
+                : "border-none"
             }`
           }
         >
@@ -24,8 +26,10 @@ export default function SideMenu({ isMenuOpen }) {
         <NavLink
           to="https://torbatkar.ir/jobs/"
           className={({ isActive }) =>
-            `text-nowrap font-bold ${
-              isActive ? "text-black" : "text-[#757575]"
+            `text-nowrap font-bold text-black py-1 ${
+              isActive
+                ? "border-solid border-b-2 border-Primary"
+                : "border-none"
             }`
           }
         >
@@ -36,8 +40,10 @@ export default function SideMenu({ isMenuOpen }) {
         <NavLink
           to="https://torbatkar.ir/about"
           className={({ isActive }) =>
-            `text-nowrap font-bold ${
-              isActive ? "text-black" : "text-[#757575]"
+            `text-nowrap font-bold text-black py-1 ${
+              isActive
+                ? "border-solid border-b-2 border-Primary"
+                : "border-none"
             }`
           }
         >
@@ -48,8 +54,10 @@ export default function SideMenu({ isMenuOpen }) {
         <NavLink
           to="https://torbatkar.ir/contact/"
           className={({ isActive }) =>
-            `text-nowrap font-bold ${
-              isActive ? "text-black" : "text-[#757575]"
+            `text-nowrap font-bold text-black py-1 ${
+              isActive
+                ? "border-solid border-b-2 border-Primary"
+                : "border-none"
             }`
           }
         >
@@ -60,8 +68,10 @@ export default function SideMenu({ isMenuOpen }) {
         <NavLink
           to="https://torbatkar.ir/employers-list/"
           className={({ isActive }) =>
-            `text-nowrap font-bold ${
-              isActive ? "text-black" : "text-[#757575]"
+            `text-nowrap font-bold text-black py-1 ${
+              isActive
+                ? "border-solid border-b-2 border-Primary"
+                : "border-none"
             }`
           }
         >

@@ -11,7 +11,7 @@ export default function WebDescription() {
         <img
           src={LinearIcon}
           alt=""
-          className="absolute lg:top-[-10rem] top-[-14rem] lg:left-[-45rem] md:left-[-25rem] left-[-19rem]"
+          className="absolute lg:top-[-10rem] top-[-14rem] lg:left-[-45rem] md:left-[-25rem] left-[-19rem] z-10"
         />
         <h2 className="text-white sm:text-2xl text-xl font-bold">
           سایت تربت‌کار حیدریه چگونه کار میکند؟
@@ -22,7 +22,7 @@ export default function WebDescription() {
         <span className="bg-[#FFC947] w-[130px] h-1 rounded-full"></span>
       </div>
 
-      <div className="sm:w-[90%] w-[85%] mx-auto grid lg:grid-cols-3 sm:gap-12 gap-9 lg:absolute static lg:bottom-[-10rem] lg:translate-y-0 translate-y-[-10rem]">
+      <div className="sm:w-[90%] w-full sm:bg-inherit bg-Primary sm:px-0 pb-5 px-10 grid lg:grid-cols-3 sm:gap-12 gap-9 lg:absolute static lg:bottom-[-10rem] lg:translate-y-0 translate-y-[-10rem]">
         <div className="bg-white rounded-2xl flex flex-col items-center sm:gap-9 gap-6 shadow-md sm:p-10 p-7 hover:scale-110 transition-all">
           <img src={featureIcon1} alt="" className="" />
           <span className="text-black font-bold text-lg text-center">

@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import CustomLanding from "../../../Setting/CustomLanding";
 
 export default function HeaderComponent() {
+  const [value, setValue] = useState("");
+
+  const getValue = (e) => {
+    setValue(e.target.value);
+  };
+
+  const ShowResult = () => {
+    const searchUrl = "https://torbatkar.ir/jobs-search/?filter-title=" + value;
+    window.location.href = searchUrl;
+  };
+
   return (
     <header className="container mx-auto flex lg:flex-row flex-col-reverse items-start bg-Base sm:rounded-[48px] px-12 py-24 sm:mt-28 mt-20 sm:mb-36 mb-10">
       <div className="lg:w-1/2 w-full flex items-start gap-7">
@@ -22,10 +33,11 @@ export default function HeaderComponent() {
           <div className="bg-white flex items-center w-full py-3 px-4 overflow-hidden rounded-lg">
             <input
               type="text"
+              onChange={getValue}
               className="outline-none text-Primary w-full sm:text-base text-sm"
               placeholder="جستجوی مهارت، پروژه و متخصص..."
             />
-            <button className="bg-white">
+            <button onClick={ShowResult} className="bg-white">
               <CiSearch className="text-Primary font-extralight text-3xl" />
             </button>
           </div>
