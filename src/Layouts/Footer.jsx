@@ -26,11 +26,22 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-1">
             <span className="text-black font-bold">شماره تماس :</span>
-            <span className="text-sm text-gray-500">52278612-051</span>
+            <a
+              href="tel:+5152278612"
+              dir="ltr"
+              className="text-sm text-gray-500"
+            >
+              52278612-051
+            </a>
           </div>
           <div className="flex items-center gap-1">
             <span className="text-black font-bold">ایمیل :</span>
-            <span className="text-sm text-gray-500">info@torbatkar.ir</span>
+            <a
+              href="mailto:info@torbatkar.ir"
+              className="text-sm text-gray-500"
+            >
+              info@torbatkar.ir
+            </a>
           </div>
           <div className="flex flex-col items-start gap-2">
             <span className="text-Primary font-bold sm:text-base text-sm sm:text-start text-center">
@@ -54,7 +65,7 @@ export default function Footer() {
             <li className="text-black font-bold pb-2">تربت کار</li>
             <li>
               <Link
-                to="/"
+                to="https://torbatkar.ir/about/"
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 درباره ما
@@ -62,7 +73,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                to="/"
+                to="https://torbatkar.ir/contact/"
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 تماس با ما
@@ -70,7 +81,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                to="/"
+                to="https://torbatkar.ir/blog/"
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 اتاق خبر
@@ -78,10 +89,18 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                to="/"
+                to="https://torbatkar.ir/terms/"
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 قوانین و مقررات
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="https://torbatkar.ir/faq/"
+                className="text-sm text-gray-500 hover:text-black transition-all"
+              >
+                سوالات متداول
               </Link>
             </li>
           </ul>
@@ -89,7 +108,7 @@ export default function Footer() {
             <li className="text-black font-bold pb-2">برای کارجویان</li>
             <li>
               <Link
-                to="/"
+                to="https://torbatkar.ir/user-dashboard/"
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 حساب کاربری
@@ -97,15 +116,15 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                to="/"
+                to="https://torbatkar.ir/alerts-jobs/"
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
-                سوالات متداول
+                هشدار‌های شغلی
               </Link>
             </li>
             <li>
               <Link
-                to="/"
+                to="https://torbatkar.ir/job/"
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 راهنمای کار با سایت
@@ -113,7 +132,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                to="/"
+                to="https://torbatkar.ir/about/"
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 درباره ما
@@ -124,7 +143,7 @@ export default function Footer() {
             <li className="text-black font-bold pb-2">برای کارفرمایان</li>
             <li>
               <Link
-                to="/"
+                to="https://torbatkar.ir/employer/"
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 همه کارفرمایان
@@ -132,7 +151,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                to="/"
+                to="https://torbatkar.ir/#"
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 داشبورد کارفرما
@@ -140,7 +159,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                to="/"
+                to="https://torbatkar.ir/submit-job/"
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 ارسال شغل
@@ -148,7 +167,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                to="/"
+                to="https://torbatkar.ir/pricing/"
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 پکیج‌های شغلی
@@ -166,16 +185,16 @@ export default function Footer() {
           تمامی حقوق برای تربت‌کار محفوظ است
         </span>
         <div className="flex items-center gap-6">
-          <Link to="/" className="text-Primary text-2xl">
+          <Link to="https://torbatkar.ir/#" className="text-Primary text-2xl">
             <FaTwitter />
           </Link>
-          <Link to="/" className="text-Primary text-2xl">
+          <Link to="https://torbatkar.ir/#" className="text-Primary text-2xl">
             <FaInstagram />
           </Link>
-          <Link to="/" className="text-Primary text-2xl">
+          <Link to="https://torbatkar.ir/#" className="text-Primary text-2xl">
             <FiLinkedin />
           </Link>
-          <Link to="/" className="text-Primary text-2xl">
+          <Link to="https://torbatkar.ir/#" className="text-Primary text-2xl">
             <RiFacebookFill />
           </Link>
         </div>
