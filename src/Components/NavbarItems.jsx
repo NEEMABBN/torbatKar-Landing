@@ -20,7 +20,8 @@ export default function NavbarItems() {
       </li>
       <li>
         <NavLink
-          to="https://torbatkar.ir/jobs/"
+          // to="https://torbatkar.ir/jobs/"
+            onClick={() => window.location.href = "https://torbatkar.ir/jobs/" }
           className={({ isActive }) =>
             `text-nowrap font-bold text-black py-[23px] ${
               isActive
