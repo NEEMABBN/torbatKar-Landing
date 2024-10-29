@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
   <React.Fragment>
-    <BrowserRouter basename="/NewLanding">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.Fragment>
