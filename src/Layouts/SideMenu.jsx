@@ -23,60 +23,40 @@ export default function SideMenu({ isMenuOpen, className }) {
         </NavLink>
       </li>
       <li>
-        <NavLink
-          to="https://torbatkar.ir/jobs/"
-          className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-1 ${
-              isActive
-                ? "border-solid border-b-2 border-Primary"
-                : "border-none"
-            }`
-          }
+        <button
+          onClick={() => (window.location.href = "https://torbatkar.ir/jobs/")}
+          className="text-nowrap text-black font-bold"
         >
           فرصت‌های شغلی
-        </NavLink>
+        </button>
       </li>
       <li>
-        <NavLink
-          to="https://torbatkar.ir/employers-list/"
-          className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-1 ${
-              isActive
-                ? "border-solid border-b-2 border-Primary"
-                : "border-none"
-            }`
+        <button
+          onClick={() =>
+            (window.location.href = "https://torbatkar.ir/employers-list/")
           }
+          className="text-nowrap text-black font-bold"
         >
           کارفرمایان
-        </NavLink>
+        </button>
       </li>
       <li>
-        <NavLink
-          to="https://torbatkar.ir/about"
-          className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-1 ${
-              isActive
-                ? "border-solid border-b-2 border-Primary"
-                : "border-none"
-            }`
-          }
+        <button
+          onClick={() => (window.location.href = "https://torbatkar.ir/about")}
+          className="text-nowrap text-black font-bold"
         >
-          درباره ما
-        </NavLink>
+          درباره‌ما
+        </button>
       </li>
       <li>
-        <NavLink
-          to="https://torbatkar.ir/contact/"
-          className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-1 ${
-              isActive
-                ? "border-solid border-b-2 border-Primary"
-                : "border-none"
-            }`
+        <button
+          onClick={() =>
+            (window.location.href = "https://torbatkar.ir/contact/")
           }
+          className="text-nowrap text-black font-bold"
         >
-          تماس با ما
-        </NavLink>
+          تماس‌با‌ما
+        </button>
       </li>
     </ul>
   );

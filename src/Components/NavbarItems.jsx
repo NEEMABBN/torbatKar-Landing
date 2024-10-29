@@ -19,61 +19,40 @@ export default function NavbarItems() {
         </NavLink>
       </li>
       <li>
-        <NavLink
-          // to="https://torbatkar.ir/jobs/"
-            onClick={() => window.location.href = "https://torbatkar.ir/jobs/" }
-          className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-[23px] ${
-              isActive
-                ? "border-solid border-b-2 border-Primary"
-                : "border-none"
-            }`
-          }
+        <button
+          onClick={() => (window.location.href = "https://torbatkar.ir/jobs/")}
+          className="text-nowrap text-black font-bold"
         >
           فرصت‌های شغلی
-        </NavLink>
+        </button>
       </li>
       <li>
-        <NavLink
-          to="https://torbatkar.ir/employers-list/"
-          className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-[23px] ${
-              isActive
-                ? "border-solid border-b-2 border-Primary"
-                : "border-none"
-            }`
+        <button
+          onClick={() =>
+            (window.location.href = "https://torbatkar.ir/employers-list/")
           }
+          className="text-nowrap text-black font-bold"
         >
           کارفرمایان
-        </NavLink>
+        </button>
       </li>
       <li>
-        <NavLink
-          to="https://torbatkar.ir/about"
-          className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-[23px] ${
-              isActive
-                ? "border-solid border-b-2 border-Primary"
-                : "border-none"
-            }`
-          }
+        <button
+          onClick={() => (window.location.href = "https://torbatkar.ir/about")}
+          className="text-nowrap text-black font-bold"
         >
           درباره‌ما
-        </NavLink>
+        </button>
       </li>
       <li>
-        <NavLink
-          to="https://torbatkar.ir/contact/"
-          className={({ isActive }) =>
-            `text-nowrap font-bold text-black py-[23px] ${
-              isActive
-                ? "border-solid border-b-2 border-Primary"
-                : "border-none"
-            }`
+        <button
+          onClick={() =>
+            (window.location.href = "https://torbatkar.ir/contact/")
           }
+          className="text-nowrap text-black font-bold"
         >
-          تماس‌باما
-        </NavLink>
+          تماس‌با‌ما
+        </button>
       </li>
     </ul>
   );

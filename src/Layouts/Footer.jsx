@@ -64,114 +64,141 @@ export default function Footer() {
           <ul className="flex flex-col sm:items-start items-center gap-2">
             <li className="text-black font-bold pb-2">تربت کار</li>
             <li>
-              <Link
-                to="https://torbatkar.ir/about/"
+              <button
+                onClick={() =>
+                  (window.location.href = "https://torbatkar.ir/about/")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
-                درباره ما
-              </Link>
+                درباره‌ما
+              </button>
             </li>
             <li>
-              <Link
-                to="https://torbatkar.ir/contact/"
+              <button
+                onClick={() =>
+                  (window.location.href = "https://torbatkar.ir/contact/")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
-                تماس با ما
-              </Link>
+                تماس‌با‌ما
+              </button>
             </li>
             <li>
-              <Link
-                to="https://torbatkar.ir/blog/"
+              <button
+                onClick={() =>
+                  (window.location.href = "https://torbatkar.ir/blog/")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 اتاق خبر
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                to="https://torbatkar.ir/terms/"
+              <button
+                onClick={() =>
+                  (window.location.href = "https://torbatkar.ir/terms/")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 قوانین و مقررات
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                to="https://torbatkar.ir/faq/"
+              <button
+                onClick={() =>
+                  (window.location.href = "https://torbatkar.ir/faq/")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 سوالات متداول
-              </Link>
+              </button>
             </li>
           </ul>
           <ul className="flex flex-col sm:items-start items-center gap-2">
             <li className="text-black font-bold pb-2">برای کارجویان</li>
             <li>
-              <Link
-                to="https://torbatkar.ir/user-dashboard/"
+              <button
+                onClick={() =>
+                  (window.location.href =
+                    "https://torbatkar.ir/user-dashboard/")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 حساب کاربری
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                to="https://torbatkar.ir/alerts-jobs/"
+              <button
+                onClick={() =>
+                  (window.location.href = "https://torbatkar.ir/alerts-jobs/")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 هشدار‌های شغلی
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                to="https://torbatkar.ir/job/"
+              <button
+                onClick={() =>
+                  (window.location.href = "https://torbatkar.ir/job/")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 راهنمای کار با سایت
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                to="https://torbatkar.ir/about/"
+              <button
+                onClick={() =>
+                  (window.location.href = "https://torbatkar.ir/about/")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
-                درباره ما
-              </Link>
+                درباره‌ما
+              </button>
             </li>
           </ul>
           <ul className="flex flex-col sm:items-start items-center gap-2">
             <li className="text-black font-bold pb-2">برای کارفرمایان</li>
             <li>
-              <Link
-                to="https://torbatkar.ir/employer/"
+              <button
+                onClick={() =>
+                  (window.location.href = "https://torbatkar.ir/employer/")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 همه کارفرمایان
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                to="https://torbatkar.ir/#"
+              <button
+                onClick={() =>
+                  (window.location.href = "https://torbatkar.ir/#")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 داشبورد کارفرما
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                to="https://torbatkar.ir/submit-job/"
+              <button
+                onClick={() =>
+                  (window.location.href = "https://torbatkar.ir/submit-job/")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 ارسال شغل
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                to="https://torbatkar.ir/pricing/"
+              <button
+                onClick={() =>
+                  (window.location.href = "https://torbatkar.ir/pricing/")
+                }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
                 پکیج‌های شغلی
-              </Link>
+              </button>
             </li>
           </ul>
           <div className="flex flex-col items-center gap-5">
