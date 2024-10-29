@@ -16,7 +16,7 @@ export default function Companies() {
   return (
     <div className="container mx-auto flex flex-col items-center sm:mt-10">
       <h2 className="md:text-4xl sm:text-2xl text-xl text-Primary font-bold">
-        اعتماد کنندگان به ما
+        به ما اعتماد کرده‌اند
       </h2>
       <div className="w-full flex items-center px-2">
         <Swiper

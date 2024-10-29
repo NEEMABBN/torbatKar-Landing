@@ -31,7 +31,7 @@ export default function Footer() {
               dir="ltr"
               className="text-sm text-gray-500"
             >
-              52278612-051
+              051-52278612
             </a>
           </div>
           <div className="flex items-center gap-1">
@@ -90,7 +90,7 @@ export default function Footer() {
                 }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
-                اتاق خبر
+                وبلاگ
               </button>
             </li>
             <li>
@@ -144,7 +144,7 @@ export default function Footer() {
                 }
                 className="text-sm text-gray-500 hover:text-black transition-all"
               >
-                راهنمای کار با سایت
+                موقعیت‌های شغلی
               </button>
             </li>
             <li>

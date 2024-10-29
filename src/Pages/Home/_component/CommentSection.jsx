@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import EachCommentBox from "../../../Components/EachCommentBox";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -8,6 +8,33 @@ import LinearIcon from "../../../assets/Images/Linearrr.svg";
 import CommentIcon from "../../../assets/Images/CommentIcon.svg";
 
 export default function CommentSection() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [rate, setRate] = useState(0);
+
+  const name = "CommentList";
+  const url = `https://torbatkar.ir/api/api.php?ListType=${name}`;
+  useEffect(() => {
+    getComment();
+  }, []);
+
+  const getComment = async () => {
+    try {
+      const response = await fetch(url, {
+        method: "GET",
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const fetchedData = await response.json();
+      setData(fetchedData);
+      setLoading(false);
+      setRate(fetchedData);
+    } catch (error) {
+      console.error("Error fetching jobs:", error);
+    }
+  };
+
   return (
     <div className="w-full flex flex-col items-start bg-Primary relative lg:mt-52 mt-0 px-4 py-24 overflow-hidden">
       <img
@@ -52,24 +79,28 @@ export default function CommentSection() {
           modules={[Pagination, Autoplay]}
           className="mySwiper py-11"
         >
-          <SwiperSlide>
-            <EachCommentBox />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EachCommentBox />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EachCommentBox />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EachCommentBox />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EachCommentBox />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EachCommentBox />
-          </SwiperSlide>
+          {loading ? (
+            <div className="w-full flex items-start gap-7">
+              <span className="text-white text-5xl animate-pulse">
+                در حال بارگذاری...
+              </span>
+            </div>
+          ) : data.length > 0 ? (
+            data.map((item, index) => (
+              <SwiperSlide key={index}>
+                <EachCommentBox
+                  key={index}
+                  BusinessName={item.BusinessName}
+                  EmployerName={item.EmployerName}
+                  Message={item.Message}
+                  Profile={item.Profile}
+                  Rate={item.Rate}
+                />
+              </SwiperSlide>
+            ))
+          ) : (
+            ""
+          )}
         </Swiper>
       </div>
     </div>

@@ -33,7 +33,7 @@ export default function SuggestedJobs() {
   return (
     <div className="container mx-auto flex flex-col items-center gap-12 sm:mb-28 mb-14 sm:px-0 px-3">
       <h2 className="md:text-4xl sm:text-2xl text-xl text-Primary font-bold">
-        مشاغل پیشنهادی در تربت‌کار
+        مشاغل پیشنهادی در تربت کار
       </h2>
       <p className="md:text-start text-center sm:text-base text-sm">
         در تربت کار  شغلی را پیدا کنید که شرایط زندگی شما را فراهم می کند.

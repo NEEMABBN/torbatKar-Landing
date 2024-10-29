@@ -14,10 +14,10 @@ export default function WebDescription() {
           className="absolute lg:top-[-10rem] top-[-14rem] lg:left-[-45rem] md:left-[-25rem] left-[-19rem] z-10"
         />
         <h2 className="text-white sm:text-2xl text-xl font-bold">
-          سایت تربت‌کار حیدریه چگونه کار میکند؟
+          از شغلت ناراضی؟
         </h2>
         <p className="text-sm text-white text-center">
-          راهنمای جامع ثبت شغل و جستجوی شغل در تربت کار
+          فقط سه قدم تا استخدام تو شغل مورد علاقت فاصله داری
         </p>
         <span className="bg-[#FFC947] w-[130px] h-1 rounded-full"></span>
       </div>

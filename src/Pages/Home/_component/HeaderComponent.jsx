@@ -35,7 +35,7 @@ export default function HeaderComponent() {
               type="text"
               onChange={getValue}
               className="outline-none text-Primary w-full sm:text-base text-sm"
-              placeholder="جستجوی مهارت، پروژه و متخصص..."
+              placeholder="جستجوی فرصت شغلی، کارفرما..."
             />
             <button onClick={ShowResult} className="bg-white">
               <CiSearch className="text-Primary font-extralight text-3xl" />
