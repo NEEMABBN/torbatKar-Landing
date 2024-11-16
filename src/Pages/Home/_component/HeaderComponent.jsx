@@ -8,10 +8,20 @@ export default function HeaderComponent() {
   const getValue = (e) => {
     setValue(e.target.value);
   };
+  const keyDownHandle = (e) => {
+    if (e.key == "Enter") {
+      ShowResult();
+    }
+  };
 
   const ShowResult = () => {
-    const searchUrl = "https://torbatkar.ir/jobs-search/?filter-title=" + value;
-    window.location.href = searchUrl;
+    if (value === "") {
+      ("");
+    } else {
+      const searchUrl =
+        "https://torbatkar.ir/jobs-search/?filter-title=" + value;
+      window.location.href = searchUrl;
+    }
   };
 
   return (
@@ -34,6 +44,7 @@ export default function HeaderComponent() {
             <input
               type="text"
               onChange={getValue}
+              onKeyDown={keyDownHandle}
               className="outline-none text-Primary w-full sm:text-base text-sm"
               placeholder="جستجوی فرصت شغلی، کارفرما..."
             />
